@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planes de Edición de Video - Infografía</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #073B4C;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 400px;
+            max-height: 50vh;
+        }
+    </style>
+</head>
+<body class="text-white">
+    
+    <div class="container mx-auto p-4 md:p-8">
+
+        <header class="text-center my-12">
+            <h1 class="text-4xl md:text-6xl font-black text-white uppercase tracking-wider">Transforma Tu Contenido</h1>
+            <p class="text-lg md:text-xl mt-4 max-w-3xl mx-auto text-gray-300">Planes de edición de video diseñados para que tus ideas brillen en YouTube y TikTok. Elige el plan perfecto para ti.</p>
+        </header>
+
+        <section id="plans" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 my-16">
+            
+            <div class="bg-white/10 backdrop-blur-sm rounded-xl shadow-2xl p-8 border border-white/20 transform hover:scale-105 transition-transform duration-300">
+                <h3 class="text-2xl font-bold text-[#FFD166]">Plan Básico</h3>
+                <p class="text-4xl font-black my-4">150 <span class="text-2xl font-semibold">DOP/min</span></p>
+                <p class="text-gray-300 mb-6 h-16">Ideal para vlogs y videos que necesitan cortes directos y un acabado limpio.</p>
+                <ul class="space-y-3 text-gray-200">
+                    <li class="flex items-center"><span class="text-[#06D6A0] mr-3">✔</span> Sincronización de audio</li>
+                    <li class="flex items-center"><span class="text-[#06D6A0] mr-3">✔</span> Cortes y recortes</li>
+                    <li class="flex items-center"><span class="text-[#06D6A0] mr-3">✔</span> Renderizado HD</li>
+                    <li class="flex items-center"><span class="text-gray-500 mr-3">✖</span> Música de fondo</li>
+                    <li class="flex items-center"><span class="text-gray-500 mr-3">✖</span> Subtítulos</li>
+                </ul>
+                <div class="text-center mt-8 bg-[#FFD166] text-[#073B4C] font-bold py-2 rounded-lg">1 Revisión Incluida</div>
+            </div>
+
+            <div class="bg-white/10 backdrop-blur-sm rounded-xl shadow-2xl p-8 border-2 border-[#06D6A0] transform scale-105">
+                <p class="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 bg-[#06D6A0] text-white px-4 py-1 rounded-full text-sm font-bold">MÁS POPULAR</p>
+                <h3 class="text-2xl font-bold text-[#06D6A0]">Plan Estándar</h3>
+                <p class="text-4xl font-black my-4">250 <span class="text-2xl font-semibold">DOP/min</span></p>
+                <p class="text-gray-300 mb-6 h-16">Perfecto para contenido dinámico que busca captar la atención de la audiencia.</p>
+                <ul class="space-y-3 text-gray-200">
+                    <li class="flex items-center"><span class="text-[#06D6A0] mr-3">✔</span> Todo del Plan Básico</li>
+                    <li class="flex items-center"><span class="text-[#06D6A0] mr-3">✔</span> Música de fondo</li>
+                    <li class="flex items-center"><span class="text-[#06D6A0] mr-3">✔</span> Subtítulos básicos</li>
+                    <li class="flex items-center"><span class="text-[#06D6A0] mr-3">✔</span> Transiciones dinámicas</li>
+                    <li class="flex items-center"><span class="text-gray-500 mr-3">✖</span> Efectos de sonido</li>
+                </ul>
+                <div class="text-center mt-8 bg-[#06D6A0] text-white font-bold py-2 rounded-lg">2 Revisiones Incluidas</div>
+            </div>
+
+            <div class="bg-white/10 backdrop-blur-sm rounded-xl shadow-2xl p-8 border border-white/20 transform hover:scale-105 transition-transform duration-300">
+                <h3 class="text-2xl font-bold text-[#FF6B6B]">Plan Premium</h3>
+                <p class="text-4xl font-black my-4">400 <span class="text-2xl font-semibold">DOP/min</span></p>
+                <p class="text-gray-300 mb-6 h-16">La solución completa para una producción de alta calidad con acabados profesionales.</p>
+                <ul class="space-y-3 text-gray-200">
+                    <li class="flex items-center"><span class="text-[#06D6A0] mr-3">✔</span> Todo del Plan Estándar</li>
+                    <li class="flex items-center"><span class="text-[#06D6A0] mr-3">✔</span> Elementos gráficos</li>
+                    <li class="flex items-center"><span class="text-[#06D6A0] mr-3">✔</span> Efectos de sonido</li>
+                    <li class="flex items-center"><span class="text-[#06D6A0] mr-3">✔</span> Corrección de color</li>
+                    <li class="flex items-center"><span class="text-[#06D6A0] mr-3">✔</span> Efectos visuales</li>
+                </ul>
+                <div class="text-center mt-8 bg-[#FF6B6B] text-white font-bold py-2 rounded-lg">3 Revisiones Incluidas</div>
+            </div>
+        </section>
+
+        <section id="value-comparison" class="my-20">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold">Inversión vs. Valor</h2>
+                <p class="text-gray-300 max-w-2xl mx-auto mt-2">Más valor por tu dinero. Observa cómo cada plan añade más herramientas para potenciar tu contenido.</p>
+            </div>
+            <div class="bg-white/10 backdrop-blur-sm rounded-xl shadow-lg p-4 md:p-6">
+                <div class="chart-container">
+                    <canvas id="priceChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <section id="addons" class="my-20">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold">Personaliza Tu Proyecto</h2>
+                <p class="text-gray-300 max-w-2xl mx-auto mt-2">Añade servicios extra a cualquier plan para un resultado único.</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6 text-center">
+                    <h4 class="font-bold text-lg text-[#118AB2]">Revisión Extra</h4>
+                    <p class="text-2xl font-black text-white my-2">500 <span class="text-lg font-semibold">DOP</span></p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6 text-center">
+                    <h4 class="font-bold text-lg text-[#118AB2]">Animación de Logo</h4>
+                    <p class="text-2xl font-black text-white my-2">1,500 <span class="text-lg font-semibold">DOP</span></p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6 text-center">
+                    <h4 class="font-bold text-lg text-[#118AB2]">Audio Avanzado</h4>
+                    <p class="text-2xl font-black text-white my-2">1,000 <span class="text-lg font-semibold">DOP</span></p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6 text-center">
+                    <h4 class="font-bold text-lg text-[#118AB2]">Subtítulos Pro</h4>
+                    <p class="text-2xl font-black text-white my-2">500 <span class="text-lg font-semibold">DOP</span></p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="process" class="my-20">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold">Nuestro Proceso</h2>
+                <p class="text-gray-300 max-w-2xl mx-auto mt-2">Un flujo de trabajo simple y transparente para llevar tu video del concepto a la realidad.</p>
+            </div>
+            <div class="flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-4">
+                <div class="flex items-center flex-col md:flex-row text-center md:text-left">
+                    <div class="bg-[#118AB2] rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold">1</div>
+                    <p class="font-semibold mt-2 md:mt-0 md:ml-4">Contacto y<br>Requisitos</p>
+                </div>
+                <div class="h-1 w-20 bg-gray-600 hidden md:block"></div>
+                <div class="w-1 h-8 bg-gray-600 md:hidden"></div>
+                <div class="flex items-center flex-col md:flex-row text-center md:text-left">
+                    <div class="bg-[#06D6A0] rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold">2</div>
+                    <p class="font-semibold mt-2 md:mt-0 md:ml-4">Acuerdo y<br>Contrato</p>
+                </div>
+                <div class="h-1 w-20 bg-gray-600 hidden md:block"></div>
+                <div class="w-1 h-8 bg-gray-600 md:hidden"></div>
+                <div class="flex items-center flex-col md:flex-row text-center md:text-left">
+                    <div class="bg-[#FFD166] rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold">3</div>
+                    <p class="font-semibold mt-2 md:mt-0 md:ml-4">Edición y<br>Revisiones</p>
+                </div>
+                <div class="h-1 w-20 bg-gray-600 hidden md:block"></div>
+                <div class="w-1 h-8 bg-gray-600 md:hidden"></div>
+                <div class="flex items-center flex-col md:flex-row text-center md:text-left">
+                    <div class="bg-[#FF6B6B] rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold">4</div>
+                    <p class="font-semibold mt-2 md:mt-0 md:ml-4">Entrega<br>Final</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="text-center border-t border-white/20 py-8 mt-12">
+            <p class="text-gray-400">¿Listo para empezar? ¡Hablemos de tu próximo proyecto!</p>
+        </footer>
+
+    </div>
+
+    <script>
+        const ctx = document.getElementById('priceChart').getContext('2d');
+        const priceChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Plan Básico', 'Plan Estándar', 'Plan Premium'],
+                datasets: [{
+                    label: 'Precio por Minuto (DOP)',
+                    data: [150, 250, 400],
+                    backgroundColor: [
+                        '#FFD166',
+                        '#06D6A0',
+                        '#FF6B6B'
+                    ],
+                    borderColor: [
+                        '#FFD166',
+                        '#06D6A0',
+                        '#FF6B6B'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        grid: {
+                            color: 'rgba(255, 255, 255, 0.1)'
+                        },
+                        ticks: {
+                            color: '#FFFFFF'
+                        }
+                    },
+                    x: {
+                        grid: {
+                            display: false
+                        },
+                        ticks: {
+                            color: '#FFFFFF'
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    tooltip: {
+                        callbacks: {
+                            title: function(tooltipItems) {
+                                const item = tooltipItems[0];
+                                let label = item.chart.data.labels[item.dataIndex];
+                                if (Array.isArray(label)) {
+                                  return label.join(' ');
+                                } else {
+                                  return label;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>
