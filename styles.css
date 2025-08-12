@@ -6,6 +6,10 @@ body {
     padding: 0;
 }
 
+a{
+    text-decoration: none;
+}
+
 .container {
     max-width: 1280px;
     margin: 0 auto;
@@ -131,12 +135,14 @@ body {
     font-weight: 900;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    color: #FFFFFF;
 }
 
 .price-unit {
     font-size: 1.5rem;
     line-height: 2rem;
     font-weight: 600;
+    color: #FFFFFF;
 }
 
 .plan-description {
@@ -224,6 +230,17 @@ body {
     border-radius: 0.75rem;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
     padding: 1rem;
+}
+
+.contactos {
+    color: #06D6A0;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+}
+.celular {
+    text-decoration: none;
+    color: #FFFFFF;
 }
 
 @media (min-width: 768px) {
