@@ -243,6 +243,37 @@ a{
     color: #FFFFFF;
 }
 
+.item a {
+    display: inline-block;
+    background-color: #399ee6;
+    color: #fff;
+    padding: 8px 32px 8px 16px; /* swapped left/right padding */
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    transition: background 0.2s;
+}
+.item a::before {
+    content: '';
+    position: absolute;
+    right: 12px; /* changed from left to right */
+    top: 50%;
+    transform: translateY(-50%);
+    border: solid transparent;
+    border-width: 8px 0 8px 12px; /* changed to point right */
+    border-left-color: #fff; /* changed from border-right-color */
+    height: 0;
+    width: 0;
+}
+.item a:hover {
+    background-color: #b71c1c;
+}
+
+
+
+
+
 @media (min-width: 768px) {
     .chart-container-wrapper {
         padding: 1.5rem;
